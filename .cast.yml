@@ -1,0 +1,23 @@
+project_name: sift
+base_dir: sift
+modes:
+  - name: desktop
+    state: sift.desktop
+  - name: server
+    state: sift.server
+    default: true
+  - name: packages-only
+    state: sift.server
+    deprecated: true
+    replacement: server
+  - name: complete
+    state: sift.desktop
+    deprecated: true
+    replacement: desktop
+supported_os:
+  - id: ubuntu
+    release: 20.04
+    focal: focal
+saltstack:
+  pillars:
+    distro_user_template: '{{ .User }}'
