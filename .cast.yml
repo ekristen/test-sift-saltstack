@@ -1,3 +1,6 @@
+github:
+  owner: ekristen
+  repo: sift-saltstack
 project_name: sift
 base_dir: sift
 modes:
@@ -20,4 +23,4 @@ supported_os:
     focal: focal
 saltstack:
   pillars:
-    distro_user_template: '{{ .User }}'
+    distro_user_template: "{{ .User }}"
