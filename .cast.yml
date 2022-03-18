@@ -2,9 +2,6 @@ release:
   github:
     owner: ekristen
     repo: test-sift-saltstack
-  extra_files:
-    - cosign.pub
-    - pgp.pub
 manifest:
   project_name: sift
   base_dir: sift
