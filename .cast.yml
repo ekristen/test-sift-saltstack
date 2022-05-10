@@ -6,7 +6,8 @@ release:
     - cosign.pub
     - pgp.pub
 manifest:
-  project_name: sift
+  version: 2
+  name: sift
   base_dir: sift
   modes:
     - name: desktop
@@ -28,4 +29,4 @@ manifest:
       focal: focal
   saltstack:
     pillars:
-      distro_user_template: "{{ .User }}"
+      sift_user_template: "{{ .User }}"
